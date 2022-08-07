@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'GIT_USER=jenkins USE_SSH=true DEPLOYMENT_BRANCH=gh-pages yarn deploy'
+                sh 'USE_SSH=true DEPLOYMENT_BRANCH=gh-pages yarn deploy'
             }
         }
     }
