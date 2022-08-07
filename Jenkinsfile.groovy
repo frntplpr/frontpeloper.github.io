@@ -1,13 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Prepare') {
-            steps: {
-                sh 'whoami'
-            }
-        }
         stage('Install') {
             steps {
+                sh 'whoami'
                 sh 'yarn install'
             }
         }
